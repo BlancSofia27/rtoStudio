@@ -1,0 +1,39 @@
+/* AdminCalendar.css */
+
+/* Oculta el día domingo */
+.ant-calendar-header .ant-calendar-header-view .ant-calendar-week-panel .ant-calendar-date:nth-child(7) {
+    display: none; /* Oculta el domingo en el encabezado del calendario */
+  }
+  
+  /* Ajusta el ancho de las celdas restantes */
+  .ant-calendar-date {
+    background-color:blue;
+    width: calc(100% / 6); /* 100% dividido entre 6 días (sin domingo) */
+    height: 80px; /* Ajusta la altura según sea necesario */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;     /* Centra el contenido verticalmente */
+    position: relative; /* Para la posición del nombre al hacer hover */
+  }
+  
+  /* Mantiene el estilo de las reservas */
+  .reservation-item {
+    position: relative; /* Para posicionar el nombre */
+  }
+  
+  .name-hover {
+    display: none; /* Oculta el nombre por defecto */
+    position: absolute; /* Posiciona el nombre en relación al contenedor */
+    background-color: white; /* Fondo blanco para el nombre */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    top: 100%; /* Coloca el nombre debajo del servicio */
+    left: 0;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .reservation-item:hover .name-hover {
+    display: block; /* Muestra el nombre al hacer hover */
+  }
+  

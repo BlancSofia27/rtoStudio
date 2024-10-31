@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+body {
+  background-color: #ffffff; /* Fondo negro */
+  color: #ffffff; /* Texto blanco para contraste */
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+

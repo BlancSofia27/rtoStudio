@@ -1,0 +1,85 @@
+/* Importa una fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilo general del calendario */
+.react-datepicker { 
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor del mes */
+.react-datepicker__month-container {
+  border: none;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Contenedor del calendario */
+.react-datepicker__triangle { 
+  display: none;
+}
+
+.react-datepicker__current-month {
+  font-size: 23px;
+  color: #f086f5;
+  font-weight: 600;
+}
+
+/* Cabecera del calendario */
+.react-datepicker__header { 
+  background-color: #ffffff; 
+  color: #000000;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px;
+}
+
+.react-datepicker__day {
+  color: #000000;
+  background-color: #f0eeee;
+  margin: 2px;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+/* Hover solo para días habilitados */
+.react-datepicker__day:not(.react-datepicker__day--disabled):hover {
+  background-color: #12db1c; /* Cambia el color de fondo al hacer hover solo en días habilitados */
+}
+
+/* Días de los nombres de la semana */
+.react-datepicker__day-name {
+  color: #f086f5;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* Días seleccionados */
+.react-datepicker__day--selected {
+  background-color: #12db1c;
+  color: #ffffff;
+}
+
+/* Días deshabilitados */
+.react-datepicker__day--disabled {
+  background-color: #777777;
+  color: #adadad;
+}
+
+/* Botón de navegación */
+.react-datepicker__navigation {
+  background-color: transparent;
+  color: #000000;
+}
+
+
+
